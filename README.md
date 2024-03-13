@@ -1,4 +1,6 @@
-# AngularBoilerplate
+# Angular Boilerplate
+
+A boilerplate for new Angular apps.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
