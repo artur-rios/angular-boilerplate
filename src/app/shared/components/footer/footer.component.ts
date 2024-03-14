@@ -9,6 +9,6 @@ import { Author } from 'src/assets/static/config.json';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  public author = Author;
+  public author = Author.Name;
   public currentYear = new Date().getFullYear();
 }

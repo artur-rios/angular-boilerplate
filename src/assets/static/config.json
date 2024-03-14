@@ -1,3 +1,7 @@
 {
-  "Author": "Artur Rios"
+  "Author": {
+    "Name": "Artur Rios",
+    "GitHub": "https://www.github.com/artur-rios",
+    "LinkedIn": "https://www.linkedin.com/in/artur-rios"
+  }
 }
