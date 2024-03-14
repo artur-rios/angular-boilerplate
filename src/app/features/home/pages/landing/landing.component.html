@@ -17,12 +17,14 @@
         <div class="flex w-1/2 justify-end content-center">
           <a
             class="inline-block text-blue-300 no-underline hover:text-dark-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
-            [href]="author.GitHub">
+            [href]="author.GitHub"
+            target="_blank">
             <img class="fill-current h-6" src="../../../../../assets/images/github-mark.svg" alt="github logo" />
           </a>
           <a
             class="inline-block text-blue-300 no-underline hover:text-dark-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
-            [href]="author.LinkedIn">
+            [href]="author.LinkedIn"
+            target="_blank">
             <img class="fill-current h-6" src="../../../../../assets/images/linkedin-logo.png" alt="linkedin logo" />
           </a>
         </div>
@@ -41,7 +43,13 @@
 
         <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in">Get started</p>
         <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
-          <button mat-raised-button color="primary" class="h-12 pr-4 bounce-top-icons mr-2.5 mb-2.5">Register</button>
+          <button
+            mat-raised-button
+            color="primary"
+            class="h-12 pr-4 bounce-top-icons mr-2.5 mb-2.5"
+            (click)="register()">
+            Register
+          </button>
           <button mat-raised-button color="primary" class="h-12 bounce-top-icons ml-2.5 mb-2.5">Login</button>
         </div>
       </div>
