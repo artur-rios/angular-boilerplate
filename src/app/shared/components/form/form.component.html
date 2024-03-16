@@ -1,0 +1,22 @@
+<div class="form-container">
+  <mat-card>
+    <mat-card-content>
+      <h1>{{ formTitle }}</h1>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        @for (item of formModel.FormItems; track $index) {
+          <mat-form-field class="w-full">
+            <input matInput [placeholder]="item.label" [formControlName]="item.name" [type]="item.type" />
+            @for (validator of item.validators; track $index) {
+              @if (isFieldInvalid(item.name) && f[item.name].hasError(validator.key) && submitted) {
+                <mat-error>
+                  {{ validator.validationMessage }}
+                </mat-error>
+              }
+            }
+          </mat-form-field>
+        }
+        <button mat-raised-button color="primary" type="submit">{{ submitButton }}</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

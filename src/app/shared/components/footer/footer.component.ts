@@ -11,4 +11,9 @@ import { Author } from 'src/assets/static/config.json';
 export class FooterComponent {
   public author = Author.Name;
   public currentYear = new Date().getFullYear();
+
+  public about(): void {
+    // TODO
+    console.log('GO TO ABOUT PAGE');
+  }
 }
