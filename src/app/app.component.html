@@ -1,8 +1,8 @@
-<div class="app-container">
+<div class="flex flex-col h-screen justify-between">
   <app-loader></app-loader>
-  <div class="content">
-    <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
+  <main class="mb-auto">
     <router-outlet></router-outlet>
-  </div>
+  </main>
   <app-footer></app-footer>
 </div>
