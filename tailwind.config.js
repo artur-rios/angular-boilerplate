@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,ts}'],
+  darkMode: 'selector',
   theme: {
-    colors: { dark: '#616161', light: '#eeeeee', green: '#69f0ae', red: '#b20d15' },
+    colors: {
+      light: '#ffffff',
+      dark: '#424242',
+      dgrey: '#eeeeee',
+      lgrey: '#f5f5f5',
+      red: '#d50000',
+      green: '#69f0ae',
+      blue: '#030844',
+    },
     extend: {},
   },
   plugins: [],

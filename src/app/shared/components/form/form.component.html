@@ -1,7 +1,7 @@
-<div class="form-container">
-  <mat-card>
+<div class="py-16 px-4">
+  <mat-card class="max-w-md m-8 m-auto text-center">
     <mat-card-content>
-      <h1>{{ formTitle }}</h1>
+      <h1 class="text-4xl p-1.5 text-dark dark:text-light">{{ formTitle }}</h1>
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         @for (item of formModel.FormItems; track $index) {
           <mat-form-field class="w-full">

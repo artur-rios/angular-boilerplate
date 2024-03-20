@@ -19,27 +19,24 @@ $mat-theme-primary: mat.define-palette(
 );
 
 $mat-theme-accent-palette: map-merge(
-  mat.$red-palette,
+  mat.$green-palette,
   (
-    501: #b20d15,
-    701: #b20d15,
-    601: #b20d15,
     contrast: (
-      501: white,
-      A100: white,
-      701: white,
+      A200: white,
+      50: white,
+      A400: white,
     ),
   )
 );
 $mat-theme-accent: mat.define-palette(
   $mat-theme-accent-palette,
-  $default: 501,
-  $lighter: A100,
-  $darker: 701,
-  $text: 601
+  $default: A200,
+  $lighter: 50,
+  $darker: A400,
+  $text: A100
 );
 
-$mat-theme-warn-palette: map-merge(mat.$green-palette, ());
+$mat-theme-warn-palette: map-merge(mat.$red-palette, ());
 $mat-theme-warn: mat.define-palette($mat-theme-warn-palette, $default: A200, $lighter: 500, $darker: 500, $text: A700);
 
 $mat-dark-theme-primary-palette: map-merge(
@@ -61,28 +58,25 @@ $mat-dark-theme-primary: mat.define-palette(
 );
 
 $mat-dark-theme-accent-palette: map-merge(
-  mat.$red-palette,
+  mat.$green-palette,
   (
-    501: #b20d15,
-    701: #b20d15,
-    601: #b20d15,
     contrast: (
-      501: black,
+      A200: black,
       50: black,
-      701: black,
+      A400: black,
     ),
   )
 );
 $mat-dark-theme-accent: mat.define-palette(
   $mat-dark-theme-accent-palette,
-  $default: 501,
+  $default: A200,
   $lighter: 50,
-  $darker: 701,
-  $text: 601
+  $darker: A400,
+  $text: A100
 );
 
 $mat-dark-theme-warn-palette: map-merge(
-  mat.$green-palette,
+  mat.$red-palette,
   (
     contrast: (
       A100: black,
