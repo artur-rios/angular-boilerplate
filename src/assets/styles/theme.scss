@@ -6,7 +6,7 @@ $mat-theme-primary-palette: map-merge(
   mat.$grey-palette,
   (
     contrast: (
-      100: #150c4a,
+      100: black,
     ),
   )
 );
@@ -19,21 +19,22 @@ $mat-theme-primary: mat.define-palette(
 );
 
 $mat-theme-accent-palette: map-merge(
-  mat.$green-palette,
+  mat.$grey-palette,
   (
+    501: black,
     contrast: (
+      501: white,
+      A100: white,
       A200: white,
-      50: white,
-      A400: white,
     ),
   )
 );
 $mat-theme-accent: mat.define-palette(
   $mat-theme-accent-palette,
-  $default: A200,
-  $lighter: 50,
-  $darker: A400,
-  $text: A100
+  $default: 501,
+  $lighter: A100,
+  $darker: A200,
+  $text: 600
 );
 
 $mat-theme-warn-palette: map-merge(mat.$red-palette, ());
@@ -43,8 +44,8 @@ $mat-dark-theme-primary-palette: map-merge(
   mat.$grey-palette,
   (
     contrast: (
-      200: #030844,
-      A100: rgba(0, 0, 0, 0.87),
+      200: black,
+      A100: 900,
       A700: rgba(0, 0, 0, 0.87),
     ),
   )
@@ -58,7 +59,7 @@ $mat-dark-theme-primary: mat.define-palette(
 );
 
 $mat-dark-theme-accent-palette: map-merge(
-  mat.$green-palette,
+  mat.$grey-palette,
   (
     contrast: (
       A200: black,
