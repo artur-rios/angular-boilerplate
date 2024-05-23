@@ -21,7 +21,7 @@ export class LoginComponent {
   ) {}
 
   public onSubmit(formValue: unknown): void {
-    // TODO
+    // TODO Login submit
     const credentials = formValue as LoginModel;
 
     this.loaderService.enable();

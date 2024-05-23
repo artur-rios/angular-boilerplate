@@ -13,7 +13,7 @@ export class FooterComponent {
   public currentYear = new Date().getFullYear();
 
   public about(): void {
-    // TODO
+    // TODO About page
     console.log('GO TO ABOUT PAGE');
   }
 }
