@@ -1,6 +1,7 @@
 <div class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif">
   <div
-    class="h-screen pb-14 bg-right bg-cover bg-light"
+    [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+    class="h-screen pb-14 bg-right bg-cover"
     style="background-image: url('../../../../../assets/images/landing-bg.svg')">
     <div class="w-full container mx-auto p-6">
       <div class="w-full flex items-center justify-between">
@@ -57,10 +58,7 @@
       </div>
 
       <div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-        <img
-          class="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
-          src="../../../../../assets/images/landing-devices.svg"
-          alt="devices" />
+        <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" alt="devices" [src]="deviceImgSrc" />
       </div>
     </div>
   </div>
