@@ -1,11 +1,11 @@
 <nav>
-  <mat-toolbar color="primary">
-    <button mat-icon-button color="contrast">
+  <mat-toolbar color="accent">
+    <button mat-icon-button color="primary">
       <mat-icon>menu</mat-icon>
     </button>
-    <a routerLink="/home">Angular Boilerplate</a>
+    <a routerLink="/home" [ngClass]="isDarkTheme ? 'text-dark' : 'text-light'">Angular Boilerplate</a>
     <span class="spacer"></span>
-    <button mat-icon-button color="contrast" type="button" (click)="toggleDarkTheme()">
+    <button mat-icon-button color="primary" type="button" (click)="toggleDarkTheme()">
       <mat-icon>{{ themeIcon }}</mat-icon>
     </button>
   </mat-toolbar>

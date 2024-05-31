@@ -4,13 +4,8 @@ module.exports = {
   darkMode: 'selector',
   theme: {
     colors: {
+      dark: '#212121',
       light: '#ffffff',
-      dark: '#424242',
-      dgrey: '#eeeeee',
-      lgrey: '#f5f5f5',
-      red: '#d50000',
-      green: '#69f0ae',
-      blue: '#030844',
     },
     extend: {},
   },

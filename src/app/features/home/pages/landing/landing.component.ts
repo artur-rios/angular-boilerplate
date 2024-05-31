@@ -17,9 +17,6 @@ import { Author } from 'src/assets/static/config.json';
 export class LandingComponent implements OnInit {
   public author = Author;
   public currentYear = new Date().getFullYear();
-  public deviceImgSrcLight = '../../../../../assets/images/landing-devices.svg';
-  public deviceImgSrcDark = '../../../../../assets/images/landing-devices-dark.png';
-  public deviceImgSrc = this.deviceImgSrcLight;
   public isDarkTheme = false;
 
   constructor(
@@ -30,7 +27,6 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {
     this.themeService.isDarkTheme.subscribe((value) => {
-      this.deviceImgSrc = value ? this.deviceImgSrcDark : this.deviceImgSrcLight;
       this.isDarkTheme = value;
     });
   }
